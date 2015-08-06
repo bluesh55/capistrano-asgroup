@@ -1,9 +1,5 @@
 require 'right_aws'
 
-unless Capistrano::Configuration.respond_to?(:instance)
-  abort 'capistrano/asgroup requires Capistrano >= 2'
-end
-
 module Capistrano
   class Configuration
     module Asgroup
